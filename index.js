@@ -6,7 +6,7 @@ var port = process.env.PORT || 3977;
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/prebilling', (err, res) => {
+mongoose.connect('mongodb://heroku_2kc25b8c:l3v9apsd719cnlop8q2ctrhhqi@ds161873.mlab.com:61873/heroku_2kc25b8c', (err, res) => {
 
     if(err){
         throw err;
