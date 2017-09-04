@@ -1,7 +1,7 @@
 'user strict'
 
 //Model
-var Today = require("../models/Today");
+var Today = require("../models/today");
 
 //Get reminders
 function getReminders(req, res){
