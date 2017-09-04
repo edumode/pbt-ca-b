@@ -2,7 +2,7 @@
 
 var express = require("express");
 var app = express.Router();
-var Today = require("./controllers/today");
+var Today = require("../controllers/today");
 
 app.get("/getReminders", Today.getReminders);
 app.get("/getReminder/:id", Today.getReminder);
