@@ -29,11 +29,11 @@ app.use((req, res, next) => {
 app.use(express.static(__dirname + '/dist'));
 
 // respond with "hello world" when a GET request is made to the homepage
-app.use('api/', user);
-app.use('api/', tools);
-app.use('api/', releases);
-app.use('api/', guideline);
-app.use('api/', today);
+app.use('/api', user);
+app.use('/api', tools);
+app.use('/api', releases);
+app.use('/api', guideline);
+app.use('/api', today);
 
 
 module.exports = app;
