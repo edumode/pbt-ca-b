@@ -26,6 +26,8 @@ app.use((req, res, next) => {
     next()
 })
 
+app.use(express.static(__dirname + '/dist'));
+
 // respond with "hello world" when a GET request is made to the homepage
 app.use('/', user);
 app.use('/', tools);
